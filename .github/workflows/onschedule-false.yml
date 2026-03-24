@@ -1,0 +1,12 @@
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  job-name:
+    runs-on: ubuntu-latest
+    environment:
+      name: dev
+      deployment: false
+    steps:
+      - run: echo 'done'
